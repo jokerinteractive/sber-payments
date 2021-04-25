@@ -9,10 +9,10 @@ setup(
     version='0.1.0',
     author='Anton Popov',
     author_email='anton@jokerinteractive.ru',
-    description='SBER Payments Python Client Library',
+    description='SBERBank Payments Python Client Library',
     long_description=long_description,
     long_description_content_type='text/x-rst',
-    url='https://github.com/jokerinteractive/sber-payments',
+    url='https://github.com/jokerinteractive/sber-payments/',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
@@ -31,8 +31,8 @@ setup(
     python_requires='>=3.6',
     project_urls={
         'Bug Reports': 'https://github.com/jokerinteractive/sber-payments/issues',
-        'Funding': 'https://donate.pypi.org',
-        'Say Thanks!': 'http://saythanks.io/to/example',
+        'Funding': 'https://yoomoney.ru/to/41001137693525',
+        'Say Thanks!': 'https://saythanks.io/to/ademaro%40ya.ru',
         'Source': 'https://github.com/jokerinteractive/sber-payments/',
     },
     install_requires=['requests'], 
