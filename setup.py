@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import pathlib
 
 here = pathlib.Path(__file__).parent.resolve()
-long_description = (here / 'README.md').read_text(encoding='utf-8')
+long_description = (here / 'README.rst').read_text(encoding='utf-8')
 
 setup(
     name='sber-payments',
@@ -11,7 +11,7 @@ setup(
     author_email='anton@jokerinteractive.ru',
     description='SBER Payments Python Client Library',
     long_description=long_description,
-    long_description_content_type='text/markdown',
+    long_description_content_type='text/x-rst',
     url='https://github.com/jokerinteractive/sber-payments',
     classifiers=[
         'Development Status :: 3 - Alpha',
@@ -31,6 +31,8 @@ setup(
     python_requires='>=3.6',
     project_urls={
         'Bug Reports': 'https://github.com/jokerinteractive/sber-payments/issues',
+        'Funding': 'https://donate.pypi.org',
+        'Say Thanks!': 'http://saythanks.io/to/example',
         'Source': 'https://github.com/jokerinteractive/sber-payments/',
     },
     install_requires=['requests'], 
