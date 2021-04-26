@@ -6,7 +6,7 @@ long_description = (here / 'README.rst').read_text(encoding='utf-8')
 
 setup(
     name='sber-payments',
-    version='0.1.0',
+    version='0.2.0',
     author='Anton Popov',
     author_email='anton@jokerinteractive.ru',
     description='SBERBank Payments Python Client Library',
