@@ -8,7 +8,7 @@ Python библиотека к программному интерфейсу (AP
 
 .. code-block:: python
 
-    from sber_payouts import Client
+    from sber_payments import Client
 
     client = Client('TOKEN')
 
