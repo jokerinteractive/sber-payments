@@ -176,3 +176,17 @@ class Client(object):
             'amount': amount,
         }
         return self._post(url, params={**self.params, **params})
+
+    def get_order_status(self, order_id: str):
+        """
+        Расширенный запрос состояния заказа
+        https://securepayments.sberbank.ru/wiki/doku.php/integration:api:rest:requests:getorderstatusextended
+
+        :param order_id: Номер заказа в платежной системе. Уникален в пределах системы. Отсутствует если регистрация
+                         заказа на удалась по причине ошибки, детализированной в ErrorCode.
+        """
+        url = f"{self.URL}getOrderStatusExtended.do"
+        params = {
+            'orderId': order_id,
+        }
+        return self._post(url, params={**self.params, **params})
