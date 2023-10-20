@@ -76,7 +76,8 @@ class Client(object):
             'amount': amount,
             'returnUrl': return_url,
         }
-        # py3.9: self.params |= params
+
+        params.update(kwargs)
 
         return self._post(url, params={**self.params, **params})
 
@@ -101,9 +102,8 @@ class Client(object):
             'amount': amount,
             'returnUrl': return_url,
         }
-        if kwargs.get('description'):
-            params['description'] = kwargs.get('description')
-        # py3.9: self.params |= params
+        
+        params.update(kwargs)
 
         return self._post(url, params={**self.params, **params})
 
@@ -152,6 +152,9 @@ class Client(object):
             'orderId': order_id,
             'amount': amount,
         }
+
+        params.update(kwargs)
+
         return self._post(url, params={**self.params, **params})
 
     def refund(self, order_id: str, amount: int = 0):
